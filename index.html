@@ -11,6 +11,14 @@ Your browser does not support the video tag.
 Your browser does not support the video tag.
 </video>
 
+<h2>Slides</h2>
+<a href="https://docs.google.com/presentation/d/1iJK5Y_ofZiNSwxMnS2F2gs-65hGJBj2HNy-CH4Nlzck/pub?start=false&loop=false&delayms=3000">Presentation Slides</a>
+
+<h2>Progress</h2>
+<p>So far, we have set up a scene in Unity with basic quad mesh attached with unlit texture shader. We wrote the first implementation of the code that takes density and velocity of the discretized fluid and outputs into the texture the visualization. We also wrote out the equations we need to solve at each time step.</p>
+
+<p>In the next week we need to implement a method to solve the PDEs from Navier-Stokes and continuity equations to calculate density and velocity and also setup a scene to test the implementation. In the week after, we will prepare for the presentation and come up with possibly more scenes to demo.</p>
+
 <h2>Proposal Update</h2>
 
 <p>We decided to change our project to a different fluid mechanics problem that shows the movement of particles within a fluid when an external force is applied to it.
@@ -62,8 +70,3 @@ Solving these PDEs, we can solve for the x- and y- velocities at every point. If
 
 <h2>Rendering</h2>
 There has been an important change in framework used. We decided against using GLSL for CPU based calculation passed into the shader as texture. This would make it easier for us to debug. Using Unity instead of OpenGL will also open up the possibility of integrating it into a game, which increases the longevity of the project after this semester.
-
-<h2>Progress</h2>
-<p>So far, we have set up a scene in Unity with basic quad mesh attached with unlit texture shader. We wrote the first implementation of the code that takes density and velocity of the discretized fluid and outputs into the texture the visualization. We also wrote out the equations we need to solve at each time step.
-
-In the next week we need to implement a method to solve the PDEs from Navier-Stokes and continuity equations to calculate density and velocity and also setup a scene to test the implementation. In the week after, we will prepare for the presentation and come up with possibly more scenes to demo.
